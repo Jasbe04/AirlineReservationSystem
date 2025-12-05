@@ -460,7 +460,7 @@ System.out.println(ex.getMessage());    }
             PreparedStatement pre;
             
             Class.forName("com.mysql.cj.jdbc.Driver");
-            con=DriverManager.getConnection("jdbc:mysql://localhost:3306/airline_project", "root", "j@sbe04");
+            con=DriverManager.getConnection("jdbc:mysql://localhost:3306/airline_project", "root", "your_password_here");
             
             
             pre =con.prepareStatement("insert into customer(CustomerID,FirstName,LastName,Passport,NationalID,Address,Contract,Gender,DOB) values(?,?,?,?,?,?,?,?,?);");
