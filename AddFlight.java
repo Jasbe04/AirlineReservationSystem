@@ -35,7 +35,7 @@ public class AddFlight extends javax.swing.JInternalFrame {
 
         // Connect to database
         Connection conn = DriverManager.getConnection(
-                "jdbc:mysql://localhost:3306/airline_project", "root", "j@sbe04");
+                "jdbc:mysql://localhost:3306/airline_project", "root", "your_password_here");
 
         // Query to get the max ID
         PreparedStatement pre = conn.prepareStatement("SELECT MAX(FlightID) AS MaxID FROM flight;");
@@ -406,7 +406,7 @@ public class AddFlight extends javax.swing.JInternalFrame {
             PreparedStatement pre;
             
             Class.forName("com.mysql.cj.jdbc.Driver");
-            con=DriverManager.getConnection("jdbc:mysql://localhost:3306/airline_project", "root", "j@sbe04");
+            con=DriverManager.getConnection("jdbc:mysql://localhost:3306/airline_project", "root", "your_password_here");
             
             
             pre = con.prepareStatement(
