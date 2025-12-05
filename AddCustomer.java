@@ -35,7 +35,7 @@ public class AddCustomer extends javax.swing.JInternalFrame {
 
         // Connect to database
         Connection conn = DriverManager.getConnection(
-                "jdbc:mysql://localhost:3306/airline_project", "root", "j@sbe04");
+                "jdbc:mysql://localhost:3306/airline_project", "root", "your_password_here");
 
         // Query to get the max ID
         PreparedStatement pre = conn.prepareStatement("SELECT MAX(CustomerID) AS MaxID FROM Customer;");
